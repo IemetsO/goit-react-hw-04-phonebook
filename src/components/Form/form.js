@@ -24,7 +24,7 @@ export default function Form({ onSubmit }) {
 
   const handleSubmit = event => {
     event.preventDefault();
-    onSubmit(name, number);
+    onSubmit({name: name, number: number});
     reset();
   };
 

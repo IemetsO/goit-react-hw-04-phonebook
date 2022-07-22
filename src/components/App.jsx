@@ -24,9 +24,9 @@ const [contacts, setContacts] = useLocalStorage("contacts", [
 ]);
 const [filter, setFilter] = useState("");
 
-const addContact = data => {
+const addContact = data => { 
   const names = contacts.map(contact => contact.name.toLowerCase())
- 
+
       if (names.includes(data.name.toLowerCase())) {
         alert(`${data.name} is already in the list`);
       } else {
