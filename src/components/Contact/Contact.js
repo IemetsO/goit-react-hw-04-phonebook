@@ -16,4 +16,5 @@ export default Contact;
 Contact.propTypes = {
   name: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
+  children: PropTypes.element.isRequired
 };
